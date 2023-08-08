@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquairo Home</title>
+    <title>Onemaple Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +12,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.jpg" class="logo">
+            <img src="images/logo.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -24,7 +24,7 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p><span>Aquairo</span> Home</p>
+            <p><span>Onemaple </span> Home</p>
             <h1>Hi, I'm <span>Fengyi</span> Zhang <br> Nice to meet you! </h1>
         </div>
     </div>
@@ -38,34 +38,67 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Fengyi Zhang is currently a Master of Computer Science student at University of Illinois Urbana Champaign (UIUC). Before that, he possessed more than one and a half year of working experience as a Software Engineer for tech giants like Microsoft and Alibaba in China. As an interdisciplinary student with both a computer science and industrial design background, he is eager to tackle technical problems in industries and build software with excellent user experience. Now, he is looking for software engineering internship opportunity in 2023 summer in the U.S.</p>
+                <p>Fengyi Zhang is currently a Master of Computer Science student at University of Illinois Urbana Champaign (UIUC). Before that, he possessed more than one and a half year of working experience as a Software Engineer for tech giants like Microsoft and Alibaba in China. As an interdisciplinary student with both a computer science and industrial design background, he is eager to tackle technical problems in industries and build software with excellent user experience.</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents active-tab" id="education">
                     <ul>
-                        <li><span>Backend Development</span><br>Designing Backend Services</li>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li>
+                            <div class="school-info">
+                                <img src="images/uiuc.png" alt="University of Illinois, Urbana-Champaign logo" height="100px">
+                                <div class="school-name"> <span class="date">2022-Current</span><br>University of Illinois, Urbana-Champaign <br>Master of Computer Science</div>
+                            </div>
+                             
+                        </li>
+                        <br>
+                        <li>
+                        <div class="school-info">
+                        <img src="images/sdu.png" alt="Shandong University logo" height="100px">
+                        <div class="school-name"> <span class="date">2017-2021 </span><br>Shandong University<br> Bachelor of Engineering in Computer Science and Technology</div>
+                        </div> 
+                        </li>
                     </ul>
                 </div>
+
+                <style>
+                    .school-info {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .school-info img {
+                        margin-right: 10px;
+                    }
+                    .school-name {
+                        font-size: 16px;
+                    }
+                    .date {
+                        margin-left: auto;
+                    }
+                </style>
+               
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2022.8 - Current</span><br>Master of Computer Science at UIUC</li>
-                        <li><span>2022 </span><br>Software Engineer at Microsoft</li>
+                        <li><span>Gap year</span><br/>Exploring in Web3, DAO, Blockchain, Smart Contracts, Cryptocurrency, DeFi, DeX, GameFi etc.</li>
+                        <li><span>2022 Fall- 2023 Spring</span><br>Master of Computer Science at UIUC</li>
+                        <li><span>2022-2023 </span><br>Software Engineer at Microsoft</li>
                         <li><span>2021-2022</span><br>Software Development Engineer at DiDi</li>
                         <li><span>2020</span><br>Summer Internship at Alibaba Cloud</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
+
+                <div class="tab-contents" id="skills">
                     <ul>
-                        <li><span>2022</span><br>University of Illinois, Urbana-Champaign<br>Master of Computer Science</li>
-                        <li><span>2017-2021 </span><br>Shandong University, China<br> Bachelor of Engineering in Computer Science and Technology</li>
+                        <li><span>Backend Development</span><br>Designing Backend Services</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li><span>Smart Contract Development</span><br>Building Dapps</li>
                     </ul>
                 </div>
+               
             </div>
         </div>
     </div>
@@ -77,21 +110,39 @@
         <div class="services-list">
             <div>
                 <i class="fas fa-code"></i>
-                <h2>Placeholder</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <h2>Phone Link</h2>
+                 <li>Designed and implemented a seamless PC-Phone pairing flow via QR/Accessibility code with 8 RESTful APIs and .Net Framework, increasing completion rate during Windows OOBE from 28.3% to 35.4%.</li>
+                 <br>
+                 <li>Reduced server and database pressure by employing microservice architecture, asynchronous programming, caching, websockets, long polling, and API throttling, achieving a 97% API success rate at 720 RPS.</li>
+                 <br>
+                 <li>Built account-based cryptographic trust relationships between PCs and phones by leveraging JWT encryption on certificate, device, and account information to ensure secure data transportation and verification.</li>
+                 <br>
+                 <li>Improved service reliability and availability by adding over 2,000 lines of unit/functional/end-to-end/load tests and metric telemetry for anomaly detection, analytics, and troubleshooting.</li>
+                <!-- <a href="#">Learn more</a> -->
             </div>
             <div>
                 <i class="fas fa-crop-alt"></i>
-                <h2>Placeholder</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <h2>POI Service</h2>
+                <li>Refactored and designed 6 APIs of Point of Interest (POI) service that serves 15 million users per day from PHP to Go, among which CPU idle time improved to 73%(36% BEF) and TP99 latency reduced by 51% given QPS of 2000.</li>
+                <br>
+                <li>Divided business process into pluggable modules with inner workflow engine and replaced 8 RESTful APIs with Didi RPC (DiRPC) protocol with Service Discovery (DiSF) components for better SOA governance.</li>
+                <br>
+                <li>Applied A/B testing to realize canary deployment, configuration synchronization and strategy experiment, and employed metrics components to trace logs generated during service context for trouble shooting.</li>
+                <br>
+                <li>Managed online metric alarms (error ratio, latency etc.) of over 22 APIs and 16 downstream services while on-call.</li>
+                <!-- <a href="#">Learn more</a> -->
             </div>
             <div>
                 <i class="fab fa-app-store"></i>
-                <h2>Placeholder</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
-                <a href="#">Learn more</a>
+                <h2>Route Traceback</h2>
+                <li>Chaired project of route traceback based on by-pass sniffing for SLA monitoring and network fault location.</li>
+                <br>
+                <li>Constructed spoofed source VIP packet sequences with increasing TTL fields to specific endpoint using Scapy.</li>
+                <br>
+                <li>Employed traffic mirroring service for packets capturing and asynchronous I/O with call-back filtering function.</li>
+                <br>
+                <li>Delivered on Advanced Anti-DDoS clusters while being elastically extendable via configuration files.</li>
+                <!-- <a href="#">Learn more</a> -->
             </div>
         </div>
     </div>
@@ -99,29 +150,29 @@
 <!-- ----------portfolio------------ -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">Previously Worked</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
-                    <h3>Placeholder</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                    <h3>Microsoft</h3>
+                    <p>Software Engineer at Microsoft Mobile Experience</p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-2.png">
                 <div class="layer">
-                    <h3>Placeholder</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                    <h3>DiDi Global</h3>
+                    <p>Software Development Engineer at Map Architecture</p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-3.png">
                 <div class="layer">
-                    <h3>Placeholder</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                    <h3>Alibaba Cloud</h3>
+                    <p>Software Engineer Intern at Cloud Security</p>
                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
@@ -157,7 +208,7 @@
         </div>
     </div>
     <!-- <div class="copyright">
-        <p>Copyright © Aquairo. Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
+        <p>Copyright © Onemaple. Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
     </div> -->
 </div>
 
@@ -194,7 +245,7 @@
 
 </script>
 <script>
-    const scriptURL = '< add you own link here >' // add your own app script link here
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby2JItYJlkkK7weSsglZ492f6nw8zAtVkFPRuQE1WI5RNxkj9Ip47te-v7Fzarkhxvd1A/exec' // add your own app script link here
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
   

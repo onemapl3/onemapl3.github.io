@@ -68,10 +68,10 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color:#002FA7;
 }
-.header-text p span{
-    color:#00D1D1
+.header-text p span{  
+    color: #ff004f;
 }
 /* -----------about--------------- */
 #about{
