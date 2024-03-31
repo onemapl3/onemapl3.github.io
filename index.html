@@ -7,6 +7,9 @@
     <title>OneMaple Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="header">
@@ -16,7 +19,7 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
@@ -39,7 +42,7 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>Fengyi Zhang is currently a Master of Computer Science student at University of Illinois Urbana Champaign (UIUC). Before that, he possessed more than one and half year of working experience as a Software Engineer for tech giants like Microsoft and Alibaba Cloud. As an interdisciplinary student with both a computer science and industrial design background, he is eager to tackle technical problems in industries and build software with excellent user experience. Besides, he is also an individual photographer with good atheistic and design taste. He is now looking for software engineer/designer/product manager opportunities in 2024.</p>
-
+                <a href="images/resume.pdf" download class="btn btn2">Résumé</a>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -99,46 +102,46 @@
                         
                         <li><span>Programming:</span><br>Go, C/C++/C#, Python, PHP, Java, JavaScript, Solidity, SQL, MQL, Cipher, Thrift, Shell</li>
                         <li><span>Frameworks/SDKs:</span> <br>Gin, GORM, gRPC, React/Native, .Net, SignalR, CodeIgniter, Pytorch,Tensorflow, MeTA, Scikit, Ethers.js</li>
-                        <li><span>Software/Platforms:</span><br>Git, Node.js, MySQL, MongoDB, Apache, Nginx, Pulsar, Redis, Consul, Postman, Swagger, Jmeter, Jenkins, Azure, AWS, GCP, Firebase, Docker, Unity, Wireshark, Expo, Hardhat, Metamask, MATLAB</li>
+                        <li><span>Software/Platforms:</span><br>Git, Node.js, MySQL, MongoDB, Apache, Nginx, Pulsar, Redis, Consul, Postman, Swagger, Jmeter, Jenkins, Azure, AWS, GCP, Firebase, Docker, Unity, Wireshark, Expo, Hardhat, Metamask, MATLAB, Colab</li>
                     </ul>
                 </div>
                
             </div>
         </div>
     </div>
+    
 </div>
 <!-- ---------services---------------- -->
-<div id="services">
+<div id="projects">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
             <div>
                 <i class="fas fa-code"></i>
-                <h2>Phone Link</h2>
-                 <li>Designed and implemented a seamless PC-Phone pairing flow via QR/Accessibility code with 8 RESTful APIs and .Net Framework, increasing completion rate during Windows OOBE from 28.3% to 35.4%.</li>
+                <h2>Autonomous Drone</h2>
+                 <li>Constructed an automatic car capable of performing cruise, avoidance, and target tracking in a specific area.</li>
                  <br>
-                 <li>Reduced server and database pressure by employing microservice architecture, asynchronous programming, caching, websockets, long polling, and API throttling, achieving a 97% API success rate at 720 RPS.</li>
+                 <li>Programmed on ARM-based microcontrollers in C to drive the engines, cameras, and various sensors</li>
                  <br>
-                 <li>Built account-based cryptographic trust relationships between PCs and phones by leveraging JWT encryption on certificate, device, and account information to ensure secure data transportation and verification.</li>
+                 <li>Applied traditional filtering methods for image segmentation and deep learning techniques for object recognition</li>
                  <br>
-                 <li>Improved service reliability and availability by adding over 2,000 lines of unit/functional/end-to-end/load tests and metric telemetry for anomaly detection, analytics, and troubleshooting.</li>
+                 <li>Implemented fuzzy PID controller and optimized it with separate integral and well-tuned parameters</li>
+                 <br>
+                <li>Achieved smooth beacon chasing with speed up to 3 m/s while flexibly avoiding crushing on obstacles</li>
                 <!-- <a href="#">Learn more</a> -->
             </div>
             <div>
                 <i class="fas fa-crop-alt"></i>
-                <h2>POI Service</h2>
-                <li>Refactored and designed 6 APIs of Point of Interest (POI) service that serves 15 million users per day from PHP to Go, among which CPU idle time improved to 73%(36% BEF) and TP99 latency reduced by 51% given QPS of 2000.</li>
+                <h2>Troll Detector</h2>
+                <li> Develop a chrome extension that detects trolls on Twitter by building sentiment analysis model and training it with the Sentiment140 dataset containing 1.6 million tweets from Kaggle
                 <br>
-                <li>Divided business process into pluggable modules with inner workflow engine and replaced 8 RESTful APIs with Didi RPC (DiRPC) protocol with Service Discovery (DiSF) components for better SOA governance.</li>
-                <br>
-                <li>Applied A/B testing to realize canary deployment, configuration synchronization and strategy experiment, and employed metrics components to trace logs generated during service context for trouble shooting.</li>
-                <br>
-                <li>Managed online metric alarms (error ratio, latency etc.) of over 22 APIs and 16 downstream services while on-call.</li>
-                <!-- <a href="#">Learn more</a> -->
+                <li>Applied advanced technical skills in data preprocessing, utilizing Google Colab for data cleaning, stemming, lemmatization, and stopword filtering                <br>
+                <li>Explored several classification models like Bernoulli Naive Bayes, SVM, and LinearSVC, ultimately choosing lo- gistic regression for superior performance                <br>
+                <li>Implemented the TF-IDF method for feature extraction and chose logistic regression for classification, achieving a model with 0.82 average precision and 0.83 recall                <!-- <a href="#">Learn more</a> -->
             </div>
             <div>
                 <i class="fab fa-app-store"></i>
-                <h2>Route Traceback</h2>
+                <h2>Route Troubleshooter</h2>
                 <li>Chaired project of route traceback based on by-pass sniffing for SLA monitoring and network fault location.</li>
                 <br>
                 <li>Constructed spoofed source VIP packet sequences with increasing TTL fields to specific endpoint using Scapy.</li>
@@ -161,7 +164,7 @@
                 <div class="layer">
                     <h3>Microsoft</h3>
                     <p>Software Engineer at Microsoft Mobile Experience</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://en.wikipedia.org/wiki/Microsoft"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -169,7 +172,7 @@
                 <div class="layer">
                     <h3>DiDi Global</h3>
                     <p>Software Development Engineer at Map Architecture</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://en.wikipedia.org/wiki/DiDi"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -177,7 +180,7 @@
                 <div class="layer">
                     <h3>Alibaba Cloud</h3>
                     <p>Software Engineer Intern at Cloud Security</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://en.wikipedia.org/wiki/Alibaba_Cloud"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -193,8 +196,9 @@
                 
                 <p><i class="fas fa-paper-plane"></i> <a href="mailto:me.fzhang@gmail.com">me {dot} fzhang {at} gmail {dot} com</a></p>
                 <p>
-                    <i class="fas fa-phone-square-alt"></i> +86 178-5262-1070 <br>
-                    <i class="fas fa-phone-square-alt"></i> +1 447-902-2370
+                    <i class="fas fa-phone-square-alt"></i> +1 447-902-2370<br>
+                    <i class="fas fa-phone-square-alt"></i> +86 178-5262-1070 
+                   
                 </p>
 
                 <div class="social-icons">
@@ -206,7 +210,7 @@
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
                 
             </div>
-            <a href="images/resume.pdf" download class="btn btn2">Résumé</a>
+            <!-- <a href="images/resume.pdf" download class="btn btn2">Résumé</a> -->
         </div>
             <div class="contact-right">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVqIQo6dwhcIynB3wVIy44MekAF7oH1FAbwiEv7WHFF0vBnA/viewform?embedded=true" width="640" height="886" frameborder="0" marginheight="0" marginwidth="0">Loading</iframe>             
