@@ -1,0 +1,23 @@
+{
+  "type": "design",
+  "designSystems": [],
+  "primaryDesignSystem": null,
+  "assets": {
+    "OneMaple Portfolio": {
+      "versions": [
+        {
+          "path": "index.html",
+          "createdAt": "2026-08-14T19:05:23.642Z",
+          "status": "needs-review",
+          "subtitle": "Real-content retro portfolio redesign",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-08-14T19:05:23.643Z",
+  "updatedAt": "2026-08-14T19:05:23.643Z"
+}
