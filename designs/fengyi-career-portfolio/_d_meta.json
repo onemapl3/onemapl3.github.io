@@ -1,0 +1,18 @@
+{
+  "type": "design",
+  "designSystems": [],
+  "primaryDesignSystem": null,
+  "assets": {
+    "Fengyi Career Portfolio": {
+      "versions": [
+        {
+          "path": "index.html",
+          "createdAt": "2026-08-14T21:04:53.438Z",
+          "status": "needs-review"
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-08-14T21:04:53.568Z",
+  "updatedAt": "2026-08-14T21:04:53.568Z"
+}
