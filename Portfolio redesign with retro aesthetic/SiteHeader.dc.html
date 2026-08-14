@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<header style="border-bottom:1px solid rgba(32,31,29,.16);background:#f3f2f2;font-family:'Lora',Georgia,serif">
+  <div style="max-width:1160px;margin:0 auto;padding:16px 44px;display:flex;align-items:center;gap:26px">
+    <div onClick="{{ go.home }}" style="display:flex;align-items:center;gap:11px;cursor:pointer">
+      <img src="images/logo.png" alt="OneMaple" style="width:32px;height:32px;mix-blend-mode:multiply">
+      <span style="font:600 17px/1 'Cormorant Garamond',serif;letter-spacing:.04em;color:#201f1d">OneMaple</span>
+    </div>
+    <nav style="display:flex;gap:22px;margin-left:auto;align-items:baseline;font:400 13.5px/1 'Lora',serif;color:#201f1d">
+      <span onClick="{{ go.work }}" style="cursor:pointer" style-hover="color:#b68235"><span lang="en">Work</span><span lang="zh">履历</span></span>
+      <span onClick="{{ go.projects }}" style="cursor:pointer" style-hover="color:#b68235"><span lang="en">Projects</span><span lang="zh">作品</span></span>
+      <span onClick="{{ go.photo }}" style="cursor:pointer" style-hover="color:#b68235"><span lang="en">Photographs</span><span lang="zh">摄影</span></span>
+      <span onClick="{{ go.words }}" style="cursor:pointer" style-hover="color:#b68235"><span lang="en">Words</span><span lang="zh">文字</span></span>
+      <span onClick="{{ go.music }}" style="cursor:pointer" style-hover="color:#b68235"><span lang="en">Music</span><span lang="zh">音乐</span></span>
+      <span onClick="{{ go.now }}" style="cursor:pointer" style-hover="color:#b68235"><span lang="en">Now</span><span lang="zh">此刻</span></span>
+    </nav>
+    <button onClick="{{ toggleLang }}" style="cursor:pointer;background:transparent;color:#201f1d;border:1px solid rgba(32,31,29,.16);border-radius:4px;padding:5px 10px;font:600 11px/1 'Cormorant Garamond',serif;letter-spacing:.1em" style-hover="border-color:#b68235;color:#b68235">EN / 中</button>
+    <button onClick="{{ openPal }}" aria-label="Open index" style="cursor:pointer;background:transparent;color:#201f1d;border:1px solid rgba(32,31,29,.16);border-radius:4px;padding:5px 9px;font:400 11px/1 ui-monospace,Menlo,monospace" style-hover="border-color:#b68235;color:#b68235">⌘K</button>
+  </div>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1160,&quot;height&quot;:66},&quot;go&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;Record&lt;string, () =&gt; void&gt;&quot;},&quot;toggleLang&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;() =&gt; void&quot;},&quot;openPal&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;() =&gt; void&quot;}}"></script>
+</body>
+</html>

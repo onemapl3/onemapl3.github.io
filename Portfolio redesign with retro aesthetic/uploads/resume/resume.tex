@@ -1,0 +1,318 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Vignesh Iyer                                 %
+% MS CSE ASU                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\begin{document}
+
+\introduction[
+    fullname=Maple  (Fengyi)  Zhang,
+    % address=95 Cuozhen Rd. Hefei{,} China,
+    email=me.fzhang@gmail.com,
+    phone=1-4479022370 / 86-17852621070,
+    linkedin=linkedin.com/in/fengyizhang-profile,
+    % wechat = fy1999wx
+    github=onemapl3.github.io
+]
+
+\education{
+    \graduateEducationItem[
+        university=University of Illinois Urbana-Champaign,
+        college=Grainger College of Engineering,
+        graduation=Aug. 2022 - Dec. 2024,
+        grade= GPA: 3.56/4.0,
+        program=Master of Computer Science,
+        coursework= Data Systems{,} Machine Learning{,} Autonomous Vehicle{,} Cloud Networks{,} Internet of Things
+    ]\\
+     \undergraduateEducationItem[
+        university=Shandong University,
+        graduation=Sept. 2017 - Jun. 2021,
+        grade=Overall GPA: 3.82/4.0,
+        program=Bachelor of Engineering in Computer Science and Technology,
+        coursework=Data Structure \& Algorithm{,} Computer Networks{,}  Database Systems{,} Operating Systems
+    ]
+}
+
+
+% \skills{
+%     \skillItem[
+%         category=Programming,
+%         skills=Go{,} C/C++/C\#{,} Python{,} PHP{,} Java{,} JavaScript{,} TypeScript{,} Solidity{,} SQL{,} MQL{,} Cipher{,} Thrift{,} Shell
+%     ] \\
+%     \skillItem[
+%         category=Frameworks/SDKs,
+%         skills=Gin{,} GORM{,} gRPC{,}Flask{,}RestFul{,}Langchain{,} React/Native{,} Express{,} .Net{,} CodeIgniter{,}Pytorch
+%     ] \\
+%     \skillItem[
+%         category=Software/Platforms,
+%         skills=Git{,} Node{,} MySQL{,} PostgreSql{,} MongoDB{,} Matlab{,} Apache{,} Nginx{,} Pulsar{,} Redis{,} Consul{,} Postman{,} Swagger{,} Jmeter{,} Jenkins{,} Azure{,} AWS{,} GCP{,} Firebase{,} Docker{,} Wireshark{,}Claude Code{,}Cursor{,}MCP
+%     ] 
+    % \skillItem[
+    %     category=Certifications,
+    %     skills=National Instruments Certified LabVIEW Associate Developer (CLAD) {–} August 2019
+    % ]
+% }
+  \skills{
+      \skillItem[
+          category=Programming,
+          skills=Go{,} Python{,} TypeScript/JavaScript{,} C/C++/C\#{,} Java{,}
+  PHP{,} SQL{,} Solidity{,} Shell
+      ] \\
+      \skillItem[
+          category=Frameworks/SDKs,
+          skills=React{,} Next.js{,} Node.js{,} FastAPI{,} Gin{,} React Native{,} Express{,}
+  Prisma{,} GORM{,} gRPC{,} REST{,} GraphQL{,} PyTorch{,} .Net{,} Tailwind CSS
+      ] \\
+      \skillItem[
+          category=Cloud/Platforms,
+          skills=Git{,} GitHub Actions{,} Docker{,} Kubernetes{,} AWS (ECS{,} Lambda{,} RDS){,} GCP{,} Azure{,} Vercel{,}
+   PostgreSQL{,} MySQL{,} MongoDB{,} SQLite{,} Qdrant{,} Redis{,} Celery{,} Nginx{,} Pulsar{,} Firebase{,} Jenkins
+      ] \\
+      \skillItem[
+          category=Data/Quality,
+          skills=Pandas{,} NumPy{,} ECharts{,} Cesium{,} H3{,} Jest{,} Playwright{,} testing{,} observability
+      ] \\
+      \skillItem[
+          category=AI / Agent Engineering,
+          skills=Codex{,} Claude Code{,} Cursor{,} GitHub Copilot{,} OpenClaw{,} MCP{,} Agent Skills{,} multi-agent orchestration{,} RAG{,} vector databases{,} prompt engineering{,} LangChain{,} Anthropic API{,} OpenAI SDK
+      ]
+  }
+
+\begin{workSection}{Professional Experience}
+
+     \experienceItem[
+        company=Space AIC,
+        location=Shanghai{,} China,
+        position=Software Engineer,
+        duration=Mar. 2026 -- Present
+    ]
+     \vspace{-0.5em}
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Built frontend capabilities for the world's first 10,000+ satellite digital-twin system with React 19, TypeScript, Vite, Cesium, Zustand, and ECharts; expanded supported experiments from 1,800 to 15,000+ satellites while keeping 3D orbit/attitude playback interactive.
+        \item Integrated the React/Cesium control plane with a distributed RPC simulation backend spanning topology generation, weighted path computation, and sharded satellite simulators; normalized result frames for constellation design, attitude control, interference, thermal, power/energy, space-environment, and ns-3 experiments.
+        \item Delivered hybrid-in-the-loop workflows with microVM terminals and a Terminal Gateway over HTTP/WebSocket/gRPC, including entity/path terminal routing, resource monitoring, draggable multi-window management, and session-aware state handling.
+        \item Built high-performance Cell/Beam rendering for 1,584-satellite experiments: drew H3 grids, terrain, and 16 beam cones; displayed satellite-wide footprints or regional coverage in real time with automatic tracking and switching.
+        \item Developed SAT Agent for satellite Q\&A and simulation support, a digital-twin copilot for scenario analysis, and a space-ground edge-AI architecture for on-satellite large-model inference.
+        \item Built SDT Education's Notebook--Python engine--Express API--Cesium workflow and per-student JupyterHub/Docker labs; authored ground-to-satellite, inter-satellite-link, end-to-end transmission, and shortest-path selection experiments to close the model--code--simulate--visualize--submit--grade loop.
+     \end{itemize}
+
+     \experienceItem[
+        company=Nethermind,
+        location=Remote,
+        position=Internship Program @Ethereum Foundation,
+        duration=Aug. 2023 -- Nov. 2023
+    ]
+     \vspace{-0.5em}
+    \begin{itemize}
+        \itemsep -6pt {} 
+        \item Implemented and migrated new architecture design for Voyager, a StarkNet blockchain explorer, from AWS Lambda and Starknet gateway to AWS ECS and RPC endpoints, rewriting 2 APIs and drawing 2 arch diagrams
+        \item Completely refactored search module to provide user appropriate search options depending on their input, resulting in a reduction of search latency by \~ 1000 ms
+        \item Optimized and improved retrieving efficiency from AWS RDS by adding indices and rewrites postgresql queries
+        \item Devised an prompt engineering method for auto-detecting and decoding Cairo types to display transaction call-data in human-friendly format, refining accuracy wrt. traditional regex matching.
+     \end{itemize}
+     
+    \experienceItem[
+        company=Microsoft,
+        location=Suzhou{,} China,
+        position=Software Engineer,
+        duration=Jan. 2022 -- Aug. 2022
+    ]
+     \vspace{-0.5em}
+     \begin{itemize}
+        \itemsep -6pt {} 
+        \item Designed and implemented a seamless PC-Phone pairing flow via QR/Accessibility code with 8 RESTful APIs and .Net Framework, increasing completion rate during Windows OOBE from 28.3\% to 35.4\%.
+        \item Reduced server and database pressure by employing microservice architecture, asynchronous programming, caching, websockets, long polling, and API throttling, achieving a ~97\% API success rate at 720 RPS.
+        \item Built account-based cryptographic trust relationships between PCs and phones by leveraging JWT encryption on certificate, device, and account information to ensure secure data transportation and verification.
+        \item Improved service reliability and availability by adding over 2,000 lines of unit/functional/end-to-end/load tests and metric telemetry for anomaly detection, analytics, and troubleshooting.
+     \end{itemize}
+     
+     \newpage
+     \experienceItem[
+        company=Didi Global,
+        location=Beijing{,} China,
+        position=Software Development Engineer,
+        duration=Jan. 2021 -- Dec. 2021
+    ]
+     \vspace{-0.5em}
+    \begin{itemize}
+        \itemsep -6pt {} 
+        \item Refactored 6 APIs of Point of Interest (POI) service that serves 15 million users per day from PHP to Go, among which CPU idle time improved to 73\%(36\% BEF) and TP99 latency reduced by 51\% given QPS of 2000 
+        \item Divided business process into pluggable modules with inner workflow engine and replaced 8 RESTful APIs with Didi RPC (DiRPC) protocol with Service Discovery (DiSF) components for better SOA governance 
+        \item Applied A/B testing to realize canary deployment, configuration synchronization and strategy experiment, and employed metrics components to trace logs generated during service context for trouble shooting 
+        \item Managed online metric alarms (error ratio, latency etc.) of over 22 APIs and 16 downstream services while on-call 
+
+     \end{itemize}
+
+     \experienceItem[
+        company=Alibaba Cloud,
+        location=Hangzhou{,} China,
+        position=Software Engineer Intern,
+        duration=Jul. 2020 -- Sept. 2020
+    ]
+     \vspace{-0.5em}
+    \begin{itemize}
+        \itemsep -6pt {} 
+        \item Chaired project of route traceback based on by-pass sniffing for SLA monitoring and network fault location 
+        \item Constructed spoofed source VIP packet sequences with increasing TTL fields to specific endpoint using Scapy 
+        \item Employed traffic mirroring service for packets capturing and asynchronous I/O with call-back filtering function     
+        \item Delivered on Advanced Anti-DDoS clusters while being elastically extendable via configuration files 
+     \end{itemize}
+     
+\end{workSection}
+
+% \summary {
+%     \summaryItem[
+%         category = Personality,
+%         desc = INFP{,}Perfectionist{,} Procrastinator{,}
+%     ]\\
+%     \summaryItem[
+%          category = Interest,
+%         desc = Web3{,}
+%     ]\\
+    
+% }
+
+% \begin{workSection}{Academic projects}
+   
+
+% \end{workSection}
+
+
+
+% \begin{workSection}{Other work experience}
+%      \experienceItem[
+%         company=Arizona State University,
+%         location=Tempe{,} AZ,
+%         position=Tutor (10 hours/week),
+%         duration=Aug 2018 – May 2019
+%     ]
+%      \begin{itemize}
+%         \vspace{-0.5em}
+%         \itemsep -6pt {} 
+%         \item Tutored 10-15 undergraduate engineering students per week in MATLAB programming and math coursework
+%      \end{itemize}
+
+%      \experienceItem[
+%         company=Kohl's,
+%         location=Gilbert{,} AZ,
+%         position=Sales Associate{,} Jewelry Department (16-24 hours{/}week),
+%         duration=Aug 2017 – Dec 2017
+%     ]
+%      \begin{itemize}
+%         \vspace{-0.5em}
+%         \itemsep -6pt {} 
+%         \item Achieved \#2 highest selling associate within one month of hire date
+%      \end{itemize}
+% \end{workSection}
+\begin{workSection}{Personal Projects}
+    \customItem[title=Time Machine - Emotional Companion App, keyHighlight=SecondMe digital-twin companion with temporal memory distillation/RAG and dual-agent SSE chat, duration=Jan. 2026 -- Mar. 2026]
+    \begin{itemize}
+        \vspace{-0.5em}\itemsep -6pt {}
+        \item Built and deployed a full-stack emotional companion around a SecondMe digital-twin Agent with \textbf{Next.js 16}, App Router, Prisma/SQLite, OAuth2, and Fly.io persistent volumes, giving users a private way to revisit conversations anchored to a chosen date.
+        \item Engineered temporal memory distillation/RAG by extracting dated anchors from text and images, then injecting only memories before the chosen time point, preventing present-day context from leaking into simulated past conversations.
+        \item Implemented dual-agent real-time \textbf{SSE} streaming: SecondMe handled primary dialogue while an Anthropic Act healer agent produced structured emotional analysis and empathetic responses.
+        \item Designed a Canvas/requestAnimationFrame TimePortal state machine from onboarding through relationship and memory selection to time travel and conversation, turning a complex flow into a coherent emotional experience.
+    \end{itemize}
+
+    \customItem[title=Type Machine (Media Transcriber), keyHighlight=AI-native multimodal capture and knowledge-processing PWA, duration=2026]
+    \begin{itemize}
+        \vspace{-0.5em}\itemsep -6pt {}
+        \item Built a mobile-first \textbf{Next.js App Router} PWA with Web Share Target ingestion, letting users send screenshots and videos directly from the system share sheet or upload images, audio, video, and URLs from desktop.
+        \item Designed an asynchronous multimodal job pipeline that routes media through OCR, speech transcription, and multimodal-model processing, turning heterogeneous inputs into a consistent editable-note schema without blocking uploads.
+        \item Implemented ordered screenshot reconstruction with overlap deduplication, UI-noise filtering, language detection, and source-text preservation, eliminating the manual OCR copy-and-stitch workflow for long articles.
+        \item Added AI post-processing for summaries, tags, and bilingual output, plus persisted task history, search/edit/review workflows, and Flomo API delivery so processed knowledge remains traceable and reusable.
+    \end{itemize}
+
+    \customItem[title=OnePoem, keyHighlight=Cross-platform poetry composition and export tool, duration=Apr. 2026]
+    \begin{itemize}
+        \vspace{-0.5em}\itemsep -6pt {}
+        \item Created a mobile-first single-page poetry editor with \textbf{React}, reusable templates, typography, color, layout ratios, collections, and widgets, turning plain text into shareable visual pages.
+        \item Implemented PNG export with html2canvas and an SVG fallback so compositions remain exportable across browsers and constrained mobile runtimes.
+        \item Packaged the web experience as a \textbf{SwiftUI}/\textbf{WKWebView} iOS app and bridged JavaScript messages to native Photos saving and system sharing.
+        \item Designed reusable styles and collection workflows so users can preserve a personal visual language instead of rebuilding each poem from scratch.
+    \end{itemize}
+
+    \customItem[title=Hang Seng Index Futures Quantitative Trading System, keyHighlight=Multi-timeframe strategy{,} backtesting{,} and risk management, duration=Oct. 2024]
+    \begin{itemize}
+        \vspace{-0.5em}\itemsep -6pt {}
+        \item Built a validated market-data pipeline integrating YFinance and external APIs for synchronized processing from one-minute bars to weekly data.
+        \item Developed a Stochastic Index trading strategy combining peak--valley divergence and parallel-channel detection to confirm signals across multiple timeframes.
+        \item Designed risk controls with dynamic position sizing, adaptive stop-loss, and trailing stops to constrain exposure under changing volatility.
+        \item Implemented modular backtesting, real-time alerts, and automated execution with structured logging and fault handling, enabling the same strategy logic across research and live workflows.
+    \end{itemize}
+
+
+% \customItem[
+% title=AI-driven Social Media Generation System,
+% keyHighlight=End-to-end multi-source RAG workflow with multi-platform support,
+% duration=Oct. 2025
+% ]
+% \begin{itemize}
+% \vspace{-0.5em}
+% \itemsep -6pt {}
+% \item Designed and implemented a FastAPI-based AI system for social media content generation, integrating LangChain, OpenAI GPT-4o-mini, and Qdrant vector database to automatically convert YouTube tutorial videos into X posts.
+% \item Built a high-performance asynchronous microservice architecture using PostgreSQL (SQLAlchemy 2.0 async), Redis, and Celery for distributed task processing; enabled concurrent multi-platform content requests and deployed via Docker Compose for multi-service orchestration.
+% \item Developed an MCP (Model Context Protocol) compliant YouTube data-source server, supporting transcription extraction, metadata analysis, and content vectorization to provide standardized data interfaces for AI agents and RAG (Retrieval-Augmented Generation) workflows.
+% % \item Orchestrated a multi-agent pipeline in LangChain across input ingestion → content understanding → RAG augmentation → platform adaptation → unified publishing, improving personal brand exposure, content reuse, and enterprise marketing efficiency.
+% \end{itemize}
+
+% \begin{itemize}
+% \vspace{-0.5em}
+% \itemsep -6pt {}
+% \item Built a comprehensive KOL influence scoring system with multi-dimensional metrics (followers, engagement, coverage, activity) and 4-tier classification, identifying 70 key opinion leaders with 85\%+ accuracy for meme analysis.
+% \item Developed dual meme detection algorithms combining keyword matching with sentiment analysis and trend detection, achieving 80\%+ detection accuracy across 22 meme projects including potential trending opportunities.
+% \item Implemented multi-dimensional meme analysis framework with social metrics like mentions and trending indicators like time-based patterns to identify emerging meme coins with high growth potential.
+% \item Created modular web analytics platform with Flask backend, PostgreSQL database, Bootstrap 5 frontend, and Chart.js visualizations, supporting real-time data updates, multi-dimensional filtering, and interactive data exploration with extensible architecture for integrating external trading data APIs.
+% \end{itemize}
+
+% \customItem[
+% title=High-Performance Data Stream Processing System,
+% keyHighlight=Zero-Copy Data Communication with Flatbuffers,
+% duration=Apr. 2024
+% ]
+% \begin{itemize}
+% \vspace{-0.5em}
+% \itemsep -6pt {}
+% \item Designed a columnar Flatbuffer schema for efficient DataFrame serialization, supporting int64, float, and string data types with optimized metadata structures.
+% \item Implemented zero-copy data communication using Python shared memory and Flatbuffers, enabling high-speed DataFrame sharing between Jupyter notebook sessions.
+% \item Developed in-place column modification for Flatbuffer-serialized DataFrames using byte-level manipulation, eliminating full deserialization and reducing memory overhead.
+% \item Integrated Flatbuffers with shared memory, creating a robust name-to-offset mapping system for managing multiple DataFrames simultaneously.
+% \end{itemize}
+
+
+% \begin{workSection}{Cocurricular Competitions}
+%      \customItem[
+%         title=Chinese Undergraduate Mathematical Contest in Modelling,
+%         keyHighlight=National Second Prize (Top 3\%),
+%         duration=Sept. 2019
+%     ]
+%      \begin{itemize}
+%         \vspace{-0.5em}
+%         \itemsep -6pt {} 
+%         \item  Devised analytic hierarchy process and entropy weight method to evaluate index for taxi decisions        
+%         \item Designed Monte Carlo simulation for dispatching strategy for taxis and passengers with fitted probability curve
+%         \item Developed data processing, analysis, and visualization programs with combination of emulation and inspection
+%         \end{itemize}
+
+     % \customItem[
+     %    title= NXP National Undergraduate Smart Racing Car Competition
+     %    duration=Jan. 2018 – Aug. 2019,
+     %    keyHighlight= Provincial Second Prize
+     % ]
+     % \begin{itemize}
+     %    \vspace{-0.5em}
+     %    \itemsep -6pt {} 
+     %    \item  Constructed an automatic car capable of performing cruise, avoidance, and target tracking in a specific area.
+     %    \item Programmed on ARM-based microcontrollers in C to drive the engines, cameras, and various sensors
+     %    \item Applied traditional filtering methods for image segmentation and deep learning techniques for object recognition
+     %    \item Implemented fuzzy PID controller and optimized it with separate integral and well-tuned parameters 
+     %    \item Achieved smooth beacon chasing with speed up to 3 m/s while flexibly avoiding crushing on obstacles  
+     % \end{itemize}
+
+\end{workSection}
+
+
+\end{document}

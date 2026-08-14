@@ -1,0 +1,10 @@
+.DS_Store
+.playwright-cli/
+.superpowers/
+output/
+tmp/
+*.zip
+
+# Source resumes are copied into each runnable version's asset folder.
+/maple_resume.pdf
+/简历 -张丰毅-2026.pdf

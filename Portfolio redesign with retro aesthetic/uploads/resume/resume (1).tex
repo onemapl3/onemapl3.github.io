@@ -1,0 +1,216 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=0.5in]{geometry}  % 减小页边距
+% 在文档开始处添加
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=15pt}
+% 调整行间距
+\renewcommand{\baselinestretch}{0.95}  % 减小整体行间距
+\setlength{\parskip}{0.3em}  % 减小段落间距
+% 调整节标题前后的间距
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xeCJK} % 支持中文
+\usepackage{geometry}
+
+% 调整页面边距
+\geometry{
+  left=0.8cm,   % 左边距
+  right=0.8cm,  % 右边距
+  top=0.7cm,    % 上边距
+  bottom=0.7cm  % 下边距
+}
+
+
+% Hyperlink setup for blue underlined links
+\hypersetup{
+    colorlinks = true, % Enable colored links
+    linkcolor = blue,  % Color for internal links
+    anchorcolor = blue, % Color for anchor text
+    citecolor = blue, % Color for citations
+    filecolor = blue, % Color for file links
+    menucolor = blue, % Color for menu links
+    runcolor = blue, % Color for run links
+    urlcolor = blue, % Color for URLs (hyperlinks)
+}
+\begin{document}
+\pagestyle{empty} % 不显示页码
+
+\begin{center}
+{\Large \textbf{张丰毅 Maple ZHANG}}\\
+\vspace{0.5em}
+
+\href{tel:14479022370}{+1 447-902-2370} /\href{tel:8617852621070}{+86 178-5262-1070} \textbar\ \href{mailto:me.fzhang@gmail.com}{me.fzhang@gmail.com} \textbar\
+\href{https://linkedin.com/in/fengyizhang-profile}{LinkedIn}  \textbar\
+\href{https://onemapl3.github.io}{Github Page}
+% \href{https://onemapl3.github.io/images/resume.pdf}{English Version} 
+\end{center}
+
+\vspace{0em}
+
+\noindent\textbf{教育背景}\\[-0.2em]
+\rule{\textwidth}{1pt}
+\textbf{伊利诺伊大学厄巴纳-香槟分校(UIUC)} \hfill 2022.08 - 2024.12 \\
+\textit{Master of Computer Science}\\
+研究方向：数据挖掘、机器学习、人机交互、云网络、物联网\\
+\textbf{山东大学} \hfill 2017.09 - 2021.06\\
+计算机科学与技术 工学学士  总GPA: 3.82/4.0\\
+相关课程: 数据结构与算法、计算机网络、数据库系统、操作系统
+
+% \vspace{0.2em}
+% \noindent\textbf{专业技能}\\[-0.2em]
+% \rule{\textwidth}{0.2pt}
+% \textbf{编程语言}:\textit{Python, Go,C/C++/C\#,PHP,Java,JavaScript/TypeScript,SQL/MQL,Cipher,Thrift,Solidity}\\
+% \textbf{框架/SDK}:\textit{FastAPI,Langchain,MCP,Gin,GORM,gRPC,React/Native,Express,.Net,CodeIgniter,Pytorch}\\
+% \textbf{软件/平台}\textit{Git,Node,MySQL,PostgreSQL,MongoDB,Matlab,Apache,Nginx,Pulsar,Redis,Consul,Postman\\Swagger,Jmeter,Jenkins,Azure,AWS,GCP,Firebase,Docker,Wireshark,Linux
+% \vspace{0.2em}}
+\noindent\textbf{专业技能}\\[-0.2em]
+  \rule{\textwidth}{0.2pt}
+  \textbf{编程语言}：\textit{Go, Python, TypeScript/JavaScript, C/C++/C\#, Java,
+   PHP, SQL, Solidity, Shell}\\
+  \textbf{框架/SDK}：\textit{React, Next.js, Node.js, FastAPI, Gin, React Native, Express,
+  Prisma, GORM, gRPC, REST, GraphQL, PyTorch, .Net, Tailwind CSS}\\
+  \textbf{云与平台}：\textit{Git, GitHub Actions, Docker, Kubernetes, AWS(ECS/Lambda/RDS), GCP, Azure, Vercel,
+  PostgreSQL, MySQL, MongoDB, SQLite, Qdrant, Redis, Celery, Nginx, Pulsar, Firebase, Jenkins}\\
+  \textbf{数据与质量}：\textit{Pandas, NumPy, ECharts, Cesium, H3, Jest, Playwright, Testing, Observability}\\
+  \textbf{AI/Agent 工程}：\textit{Codex, Claude Code, Cursor, GitHub Copilot, OpenClaw,
+  MCP, Agent Skills, Multi-Agent Orchestration, RAG, Vector Databases, Prompt Engineering, LangChain, Anthropic API, OpenAI SDK}
+  \vspace{0.2em}
+
+\noindent\textbf{工作经历}\\[-0.2em]
+\rule{\textwidth}{1pt}
+\textbf{天空智算 (Space AIC)} \hfill 2026.03 - 至今\\
+软件工程师, 上海, 中国\vspace{-8pt}
+\begin{itemize}[noitemsep,leftmargin = 15pt]
+    \item 基于 React 19、TypeScript、Vite、Cesium、Zustand 与 ECharts 开发全球首个支持万星级的卫星数字孪生系统，将实验规模从 1,800 颗卫星提升至 15,000+ 颗，并保持三维轨道/姿态回放交互
+    \item 将 React/Cesium 控制面接入由拓扑生成、加权路径计算与分片卫星模拟器组成的分布式 RPC 仿真后端，统一结果帧并支撑星座设计、姿态控制、干扰、热控、电源/能源、空间环境与 ns-3 实验
+    \item 实现半实物仿真流程与 microVM 在线终端，通过 HTTP/WebSocket/gRPC Terminal Gateway 完成实体/路径终端路由、资源监控、多窗口管理及会话状态控制
+    \item 完成 1,584 星实验的实时 Cell/Beam 波束可视化：接入 timeline/entity-timeline，展示单星 16 波束、H3 小区网格与覆盖锥体，并解决播放中覆盖滞后、实体 ID 冲突和多星凝视跳动
+    \item 开发卫星场景 AI 助手：支持 SAT Agent 卫星信息问答与仿真辅助，面向数字孪生场景提供方案分析，并探索在卫星上部署边缘算力运行大模型的天地一体化架构
+    \item 打通 SDT 教育版 Notebook--Python 仿真引擎--Express API--Cesium 数据链路，以 JupyterHub/Docker 提供学生隔离环境，形成“建模--编程--仿真--可视化--提交--评价”闭环；并交付 ITU Agent 的流式 SatAgent/RAG、轨道申报、分级权限与管理后台
+\end{itemize}
+
+\textbf{Nethermind} \hfill 2023.08 - 2023.11\\
+区块链研发实习生, 远程\vspace{-8pt}
+\begin{itemize}[noitemsep,leftmargin = 15pt]
+    \item 为StarkNet区块链浏览器Voyager实现并迁移新的架构设计, 从AWS Lambda和Starknet网关迁移到AWS ECS和RPC端点, 重写2个API并绘制2个架构图
+    \item 完全重构搜索模块, 根据用户输入提供适当的搜索选项, 使搜索延迟减少约1000毫秒
+    \item 通过添加索引和重写PostgreSQL查询, 优化和提高了从AWS RDS的检索效率
+    \item 设计了一种提示工程方法, 用于自动检测和解码Cairo类型, 以人性化格式显示交易数据, 相较传统正则匹配提高了准确性
+\end{itemize}
+
+\noindent\textbf{微软} \hfill 2022.01 - 2022.08\\
+软件工程师, 苏州, 中国\vspace{-8pt}
+\begin{itemize}[noitemsep,leftmargin = 15pt]
+    \item 通过QR/Accessibility代码与8个RESTful API和.Net框架设计并实现无缝的PC-Phone配对流程, 将Windows OOBE期间的完成率从28.3\%提高到35.4\%
+    \item 采用微服务架构、异步编程、缓存、WebSocket、长轮询和API限流, 减少服务器和数据库压力, 在720 RPS下实现97\%的API成功率
+    \item 利用JWT加密证书、设备和帐户信息, 在PC和手机之间建立基于帐户的加密信任关系, 确保数据传输和验证的安全性
+    \item 添加超过2,000行单元/功能/端到端/负载测试和指标遥测, 用于异常检测、分析和故障排除, 提高服务可靠性和可用性
+\end{itemize}
+
+\newpage
+\noindent\textbf{滴滴出行} \hfill 2021.01 - 2021.12\\
+软件开发工程师, 北京, 中国\vspace{-8pt}
+\begin{itemize}[noitemsep]
+    \item 将每天服务1500万用户的兴趣点(POI)服务的6个API从PHP重构为Go, 在QPS为2000时, CPU空闲时间提高到73\%(之前为36\%), TP99延迟降低51\%
+    \item 使用内部工作流引擎将业务流程划分为可插拔模块, 并将8个RESTful API替换为具有服务发现(DiSF)组件的滴滴RPC(DiRPC)协议, 以更好地进行SOA治理
+    \item 应用A/B测试实现金丝雀部署、配置同步和策略实验, 并采用指标组件跟踪服务上下文中生成的日志以进行故障排除
+    \item 在待命期间管理22个API和16个下游服务的在线指标警报(错误率、延迟等)
+\end{itemize}
+
+\noindent\textbf{阿里云} \hfill 2020.07 - 2020.09\\
+软件工程师实习生, 杭州, 中国\vspace{-8pt}
+\begin{itemize}[noitemsep]
+    \item 主持基于旁路嗅探的路由回溯项目, 用于SLA监控和网络故障定位
+    \item 使用Scapy构造TTL字段递增的虚假源VIP数据包序列到特定端点
+    \item 采用流量镜像服务进行数据包捕获和带有回调过滤功能的异步I/O
+    \item 在高级抗DDoS集群上交付, 同时可通过配置文件进行弹性扩展
+\end{itemize}
+
+\vspace{1em}
+
+\noindent\textbf{个人项目}\\[-0.2em]
+\rule{\textwidth}{1pt}
+\textbf{时光机 (Time Machine)} \hfill 2026.01 - 2026.03\\
+基于 SecondMe 数字分身、时间记忆蒸馏/RAG 与 SSE 的 AI 情感陪伴应用\vspace{-8pt}
+\begin{itemize}[noitemsep]
+    \item 围绕 SecondMe 数字分身 Agent，基于 \textbf{Next.js 16}、App Router、Prisma/SQLite、OAuth2 独立完成全栈产品并部署至 Fly.io，让用户可围绕指定日期私密地重温关系记忆
+    \item 对文字/图片记忆进行时间化蒸馏，提取带日期的记忆锚点并按所选时点执行 RAG，仅注入当时可知信息，避免“现在的信息”污染对过去人物的模拟
+    \item 实现双 Agent \textbf{SSE} 流式架构：SecondMe 负责主对话，Anthropic Act 疗愈 Agent 同步输出结构化情绪分析与共情回应
+    \item 使用 Canvas/requestAnimationFrame 构建 TimePortal 状态机，串联引导、关系选择、记忆锚点、时间穿越与实时对话，形成完整情感叙事体验
+\end{itemize}
+
+\noindent\textbf{Type Machine (Media Transcriber)} \hfill 2026\\
+AI Native 多模态采集与知识处理 PWA\vspace{-8pt}
+\begin{itemize}[noitemsep]
+    \item 基于 \textbf{Next.js App Router} 构建移动优先 PWA，并接入 Web Share Target，使用户可从系统分享菜单直接提交截图/视频，桌面端亦支持图片、音频、视频与 URL
+    \item 设计异步多模态任务流水线，编排 OCR、语音转写与多模态模型处理，将异构媒体归一为统一的可编辑笔记结构，并避免大文件处理阻塞上传
+    \item 实现连续截图有序重建、重叠段落去重、界面噪音过滤、语言识别与原文保留，解决长文章逐张 OCR 后仍需手工拼接的问题
+    \item 增加摘要、标签与双语输出等 AI 后处理，并持久化任务历史及搜索/编辑/复核流程，通过 Flomo API 投递完整结果，使知识可追溯、可复用
+\end{itemize}
+
+\noindent\textbf{一页诗 (OnePoem)} \hfill 2026.04\\
+跨 Web 与 iOS 的诗歌排版与导出工具\vspace{-8pt}
+\begin{itemize}[noitemsep]
+    \item 使用 \textbf{React} 开发移动优先的诗歌编辑器，支持模板、字体、配色、版式比例、诗集与桌面小组件，将纯文本转化为可收藏、可分享的视觉页面
+    \item 实现 html2canvas PNG 导出及 SVG 降级方案，保证浏览器与受限移动运行时均可生成作品图片
+    \item 通过 \textbf{SwiftUI}/\textbf{WKWebView} 封装 iOS 应用，并以 JavaScript Bridge 接入系统相册保存与原生分享
+    \item 设计可复用样式与诗集工作流，使用户持续沉淀个人视觉语言，而非每次从零排版
+\end{itemize}
+
+\vspace{0.5em}
+\noindent\textbf{学术项目}\\[-0.2em]
+\rule{\textwidth}{1pt}
+\textbf{自动驾驶行人感知与避障系统} \hfill 2024.01 - 2024.03\\
+UIUC CS588 自动驾驶课程项目\vspace{-8pt}
+\begin{itemize}[noitemsep]
+    \item 构建融合目标检测与轨迹规划的自动驾驶安全系统，在检测到行人进入风险区域时控制车辆安全停车
+    \item 完成立体相机与 LiDAR 的标定及多传感器融合，估计行人的三维位置、运动方向与实时轨迹
+    \item 根据行人跟踪结果动态调整车辆路径与碰撞规避策略，避免静态路线无法响应移动障碍物的问题
+    \item 通过真实车辆道路测试验证感知--规划--控制闭环，使系统能够随行人运动实时调整驾驶行为
+\end{itemize}
+
+\noindent\textbf{面向微视频理解的稀疏多模态序列学习} \hfill 2021.03 - 2021.05\\
+本科毕业论文\vspace{-8pt}
+\begin{itemize}[noitemsep]
+    \item 面向微视频分类提出结合稀疏编码的多模态序列学习模型，联合建模视觉、音频与文本时序信息
+    \item 使用 3 路并行 LSTM 提取各模态时序特征，并通过字典学习获得可解释的稀疏联合表示
+    \item 在包含 20,000 个样本、22 个标签的数据集上与 3 个先进基线开展受控对比实验
+    \item 相比基线模型，Micro-F 平均提升 45.9\%，分类准确率平均提升 53.3\%
+\end{itemize}
+
+  
+% \noindent\textbf{AI驱动社交媒体生成系统
+% } \hfill 2025.10\\
+% 多平台支持的端到端多源数据RAG工作流\vspace{-8pt}
+% \begin{itemize}[noitemsep]
+%   \item 设计并实现了基于 FastAPI 的 AI驱动社交媒体内容生成系统，集成 LangChain、OpenAI
+%   GPT-4o-mini 和向量数据库 Qdrant，实现 YouTube教程视频自动化转换为 Twitter 图文内容
+%   \item 构建了高性能异步微服务架构，采用 PostgreSQL(SQLAlchemy 2.0 async) + Redis + Celery分布式任务队列，支持并发处理多平台内容生成请求，通过Docker Compose 实现多服务容器化编排和部署。
+%  \item 开发了符合 MCP (Model Context Protocol) 标准的 YouTube 数据源服务器，实现视频转录提取、元数据分析和内容向量化，为 AI Agent 提供标准化数据接口，支持 RAG(检索增强生成) 工作流
+
+% \item 驱动LangChain建立了多agents协作的输入 → 内容理解 → RAG增强 → 平台适配 → 输出的多源数据统一接口统一发布的工作流，为个体IP曝光、资源复用、企业营销助力
+ 
+% \end{itemize}
+
+
+% \noindent\textbf{课外竞赛}\\
+% \rule{\textwidth}{1pt}
+% \textbf{全国大学生数学建模竞赛} \hfill 2019.09\\
+% 国家二等奖(前3\%)
+% \begin{itemize}[noitemsep]
+%     \item 设计分析层次过程和熵权法评估出租车决策指标
+%     \item 设计蒙特卡罗模拟, 使用拟合概率曲线为出租车和乘客制定调度策略
+%     \item 结合仿真和检验开发数据处理、分析和可视化程序
+% \end{itemize}
+
+% \noindent\textbf{NXP全国大学生智能汽车竞赛} \hfill 2018.01 - 2019.08\\
+% 省级二等奖
+% \begin{itemize}[noitemsep]
+%     \item 构建能在特定区域执行巡航、避障和目标跟踪的自动驾驶汽车
+%     \item 用C语言在基于ARM的微控制器上编程, 驱动发动机、摄像头和各种传感器
+%     \item 应用传统滤波方法进行图像分割, 应用深度学习技术进行目标识别
+%     \item 实现模糊PID控制器, 并使用独立积分和良好调整的参数对其进行优化
+%     \item 实现速度高达3 m/s的平稳信标追踪, 同时灵活避免障碍物碰撞
+% \end{itemize}
+
+\end{document}
