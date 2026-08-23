@@ -15,9 +15,9 @@ function Header({ lang, setLang, navOpen, setNavOpen }) {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <a className="brand" href="#top" aria-label="Fengyi Zhang home">
+        <a className="brand" href="#top" aria-label="Maple Zhang home">
           <img src="assets/profile/logo.png" alt="" aria-hidden="true" />
-          <span>Fengyi Zhang</span>
+          <span>Maple Zhang</span>
         </a>
         <nav className={navOpen ? "main-nav is-open" : "main-nav"} aria-label="Primary navigation">
           {data.navigation.map((item) => (

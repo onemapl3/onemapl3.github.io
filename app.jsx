@@ -5,7 +5,7 @@ function CareerPortfolioApp() {
   React.useEffect(() => {
     localStorage.setItem("fengyi-career-language", lang);
     document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
-    document.title = lang === "zh" ? "张丰毅 | 求职 Portfolio" : "Fengyi Zhang | Career Portfolio";
+    document.title = "Maple’s Portfolio";
   }, [lang]);
 
   React.useEffect(() => {
