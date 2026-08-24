@@ -208,6 +208,7 @@ const careerPortfolioData = {
       },
       stack: "React · SwiftUI · WKWebView · html2canvas",
       links: [
+        { label: "Live", href: "https://onepoem.vercel.app" },
         { label: "小红书", href: "https://www.xiaohongshu.com/explore/69f1dd72000000002003bd26" }
       ]
     },
@@ -224,7 +225,9 @@ const careerPortfolioData = {
         zh: "从一组回忆照片与少量文字出发，自主生成一本有完整叙事节奏的照片书，同时保留逐页编辑与印刷级导出能力。"
       },
       stack: "React · Zustand · Canvas · Sharp · PDFKit · ag-psd",
-      links: []
+      links: [
+        { label: "Live", href: "https://amebook.onemaple.cc" }
+      ]
     },
     {
       id: "oneframe",

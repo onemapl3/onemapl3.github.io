@@ -168,7 +168,7 @@ function EducationSection({ lang }) {
 
 function Footer({ lang }) {
   return (
-    <footer id="contact" className="site-footer"><div><div className="eyebrow">Open to the right problem · 联系</div><h2>{lang === "zh" ? "如果你正在构建复杂的东西，聊聊。" : "If you are building something complex, let's talk."}</h2></div><div className="footer-links"><a href="mailto:me.fzhang@gmail.com">me.fzhang@gmail.com <Icon name="arrow-up-right" size={13} /></a><a href="https://www.linkedin.com/in/fengyizhang-profile" target="_blank" rel="noreferrer">LinkedIn <Icon name="arrow-up-right" size={13} /></a><a href="https://github.com/onemapl3" target="_blank" rel="noreferrer">GitHub <Icon name="arrow-up-right" size={13} /></a></div><p className="footer-note">{lang === "zh" ? "张丰毅 · 上海 / 可远程 · 2026" : "Fengyi Zhang · Shanghai / Remote · 2026"}</p></footer>
+    <footer id="contact" className="site-footer"><div><div className="eyebrow">Open to the right problem · 联系</div><h2>{lang === "zh" ? "如果你正在构建复杂的东西，聊聊。" : "If you are building something complex, let's talk."}</h2></div><div className="footer-links"><a href="mailto:me.fzhang@gmail.com">me.fzhang@gmail.com <Icon name="arrow-up-right" size={13} /></a><a href="https://www.linkedin.com/in/fengyizhang-profile" target="_blank" rel="noreferrer">LinkedIn <Icon name="arrow-up-right" size={13} /></a><a href="https://github.com/onemapl3" target="_blank" rel="noreferrer">GitHub <Icon name="arrow-up-right" size={13} /></a></div></footer>
   );
 }
 
