@@ -138,7 +138,7 @@ function ProjectsSection({ lang }) {
         lang={lang}
         kicker={{ en: "Selected works · 项目", zh: "Selected works · 项目" }}
         title={{ en: "Things I made\nto see if they would work.", zh: "我做过的东西，\n用来验证一个想法。" }}
-        description={{ en: "Six selected projects, newest first. Public work links directly to the live product, repository, or release note; work in progress is labelled honestly.", zh: "六个项目，由新到旧。已经上线的产品直接连接真实网站、代码仓库与发布记录；仍在构建的项目如实标明当前阶段。" }}
+        description={{ en: "Five selected projects, newest first. Public work links directly to the live product, repository, or release note; work in progress is labelled honestly.", zh: "五个项目，由新到旧。已经上线的产品直接连接真实网站、代码仓库与发布记录；仍在构建的项目如实标明当前阶段。" }}
       />
       <div className="filter-bar">{filters.map((item) => <button key={item.id} type="button" className={filter === item.id ? "filter-button is-active" : "filter-button"} aria-pressed={filter === item.id} onClick={() => setFilter(item.id)}>{copy(item, lang)}</button>)}<span className="filter-count">{visible.length} / {data.projects.length}</span></div>
       <div className="project-ledger">{visible.map((item) => <ProjectRow key={item.id} item={item} lang={lang} />)}</div>

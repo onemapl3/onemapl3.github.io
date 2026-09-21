@@ -165,10 +165,10 @@ const careerPortfolioData = {
       filter: "ai",
       status: { en: "Running daily · open source", zh: "每日运行 · 开源" },
       description: {
-        en: "A multi-agent job-search system built as an agent harness: the model backbone is swappable in config (Claude Code, Codex, OpenAI- or Anthropic-compatible gateways), models are called only where inference is needed while code owns discovery, state and verdicts, capabilities ship as Agent Skills and prompt-file workflows, and you drive it from a local workbench, a Feishu Base and a Feishu bot.",
-        zh: "以 Agent Harness 方式构建的多智能体求职系统：模型底座在配置里可更换（Claude Code、Codex、OpenAI/Anthropic 兼容网关），模型只做需要推理的部分，发现、状态与结论由代码负责；能力封装为 Agent Skill 与提示词工作流；本地看板、飞书多维表格与飞书机器人三位一体操作。"
+        en: "A job-search system that works for me every day without supervision: it watches company career pages, recruiter posts and job boards, screens every opening against my résumé and preferences, drafts and files the applications I approve, reads the replies in my inbox, and pings me in Feishu only when a decision needs me. Three weeks in, it had surfaced 1,780+ openings from 44 companies.",
+        zh: "一个每天替我找工作、不用盯着的求职系统：它持续盯着企业招聘页、招聘者的帖子和各类岗位站，把每个岗位对照我的简历和偏好做筛选，替我起草并投递我点头的申请，读取邮箱里的回复，只在需要我拍板时到飞书里提醒我。上线三周，已从 44 家公司挖出 1,780+ 个岗位。"
       },
-      stack: "Node.js · Claude Code · Codex · TypeSafe Jev · Feishu · Gmail API · browser agent · launchd",
+      stack: "Node.js · Claude Code · Codex · Feishu · Gmail · browser agent",
       links: [
         { label: "GitHub", href: "https://github.com/onemapl3/job-machine" }
       ]
@@ -244,25 +244,6 @@ const careerPortfolioData = {
       stack: "React · Zustand · Canvas · Sharp · PDFKit · ag-psd",
       links: [
         { label: "Live", href: "https://amebook.onemaple.cc" }
-      ]
-    },
-    {
-      id: "agentrecall",
-      year: "2026",
-      title: "AgentRecall",
-      zhTitle: "共享记忆库 · 开源贡献",
-      category: "Open source",
-      filter: "ai",
-      status: { en: "Contributor · PR merged", zh: "贡献者 · PR 已合并" },
-      description: {
-        en: "A local desktop tool that indexes, searches and restores sessions across Claude Code, Codex and other coding agents, so every agent shares one searchable memory. I traced a duplicate-indexing bug to an event-order inversion in Codex 0.149 session logs and fixed it upstream in both v1 and v2 (PR #503, merged the same day), and reported how recalled memory was being treated as live instructions (#499), which shaped the structured-context fix.",
-        zh: "把 Claude Code、Codex 等多个编码 Agent 的会话统一索引、检索与恢复的本地桌面工具，让所有 Agent 共享一份可搜索的记忆。我定位到 Codex 0.149 会话日志事件顺序反转导致助手消息被索引两遍的根因，并在上游 v1、v2 两条路径上修复（PR #503，当天合并）；提出召回记忆被当作当前指令执行的问题（#499），推动了结构化上下文隔离的修复。"
-      },
-      stack: "TypeScript · Electron · React · embedded Postgres · MCP",
-      links: [
-        { label: "GitHub", href: "https://github.com/zszz3/AgentRecall" },
-        { label: "PR #503", href: "https://github.com/zszz3/AgentRecall/pull/503" },
-        { label: "Issue #499", href: "https://github.com/zszz3/AgentRecall/issues/499" }
       ]
     }
   ],
