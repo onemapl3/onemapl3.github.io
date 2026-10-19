@@ -157,20 +157,21 @@ const careerPortfolioData = {
   ],
   projects: [
     {
-      id: "job-machine",
+      id: "offercrew",
       year: "2026",
-      title: "Job Machine",
-      zhTitle: "求职机",
+      title: "OfferCrew",
+      zhTitle: "私人求职团队",
       category: "AI & Agents",
       filter: "ai",
-      status: { en: "Running daily · open source", zh: "每日运行 · 开源" },
+      status: { en: "Released · source available", zh: "已发布 · 源码可用" },
       description: {
-        en: "A job-search system that works for me every day without supervision: it watches company career pages, recruiter posts and job boards, screens every opening against my résumé and preferences, drafts and files the applications I approve, reads the replies in my inbox, and pings me in Feishu only when a decision needs me. Three weeks in, it had surfaced 1,780+ openings from 44 companies.",
-        zh: "一个每天替我找工作、不用盯着的求职系统：它持续盯着企业招聘页、招聘者的帖子和各类岗位站，把每个岗位对照我的简历和偏好做筛选，替我起草并投递我点头的申请，读取邮箱里的回复，只在需要我拍板时到飞书里提醒我。上线三周，已从 44 家公司挖出 1,780+ 个岗位。"
+        en: "A personal AI job-search crew for Mac. Six agents find and assess roles, tailor résumés and cover letters, manage outreach, track replies, and prepare for interviews. Desktop and phone share task and material records, so decisions can be made on the go. Forms are prefilled for you to submit, and every email or direct message waits for your approval.",
+        zh: "运行在 Mac 上的私人 AI 求职团队。六位成员协作发现岗位、判断匹配、定制简历与求职信、联系招聘方、跟进回复和准备面试；桌面与手机共用任务和材料记录，重要决定可在手机上处理。申请表自动预填、由你提交，每封邮件与私信都经你批准后发送。"
       },
-      stack: "Node.js · Claude Code · Codex · Feishu · Gmail · browser agent",
+      stack: "Node.js · Electron · SQLite · Playwright · Claude Code · Codex",
       links: [
-        { label: "GitHub", href: "https://github.com/onemapl3/job-machine" }
+        { label: "Website", href: "https://offercrew.onemaple.cc" },
+        { label: "GitHub", href: "https://github.com/onemapl3/offercrew" }
       ]
     },
     {
